@@ -9,16 +9,23 @@
     <title>Bate-Papo UOL</title>
 </head>
 <body>
-    <header>
-        <img src="./images/logo 2.png" alt="logo">
-        <div >
-            <ion-icon name="people"></ion-icon>
-        </div>
-    </header>
     <main>
+    <header>
+            <img src="./images/logo 2.png" alt="logo">
+            <div >
+                <ion-icon name="people"></ion-icon>
+            </div>
+    </header>
+    
         <div class="teste"></div>
         <div class="chat">
-            <input type="text">
+            <div>
+
+                <input class="inputChat" type="text" placeholder="Escreva aqui...">
+            </div>
+            <div>
+                <ion-icon onclick="sendMenssage()" name="paper-plane-outline"></ion-icon>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
