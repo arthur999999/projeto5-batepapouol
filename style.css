@@ -42,7 +42,7 @@ main {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 106px;
-    margin-bottom: 80px;
+    margin-bottom: 62px;
 }
 
 .status, .messagePub{
@@ -91,6 +91,10 @@ main {
     font-size: 26px;
 }
 
+.chat ion-icon:hover {
+    cursor: pointer;
+}
+
 .chat input {
     height: 80px;
     outline: none;
@@ -107,4 +111,57 @@ main {
     color: #000000;
     opacity: 1;
     
+}
+
+.scrolll {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    height: 1px;
+}
+
+.firstScreen {
+    top: 0%;
+    position: fixed;
+    z-index: 3;
+    width: 375px;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+}
+
+.firstScreen.closeScreen {
+    display: none;
+}
+
+.firstScreen img {
+    width: 130px;
+    margin-bottom: 94px;
+}
+
+.firstScreen input {
+    width: 261px;
+    height: 54px;
+    outline: none;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    text-align: center;
+    font: 400 18px 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+.firstScreen button {
+    border: none;
+    width: 109px;
+    height: 45px;
+    background-color: #E7E7E7;
+    font: 400 18px 'Roboto', sans-serif;
+    color: #696969;
+    border-radius: 9px;
+}
+
+.firstScreen input::placeholder{
+    color: #AEAEAE;
 }
